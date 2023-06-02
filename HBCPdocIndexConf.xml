@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<docIndex>
+    <database    pw="overlord" uid="hbcp_user"     url="jdbc:sqlserver://localhost:1433;databaseName=HBCPwebsite_104test;"  />
+    <folderToIndex>C:\ChemNetBaseProject\ChemNBwebsite5_2\web\documents</folderToIndex>
+    <indexLocation>C:\ChemNetBase_data\HBCP104\doc_lucene\HBCPdocsIndex_104</indexLocation>
+    <buildDocIndex>false</buildDocIndex>
+
+    <indexLocationTbl>C:\ChemNetBase_data\HBCP104\doc_lucene\HBCPdocsIndex_104_tbl</indexLocationTbl>
+    <buildTableIndexes>false</buildTableIndexes>
+
+    <indexLocationRows>C:\ChemNetBase_data\HBCP104\doc_lucene\HBCPdocsIndex_104_rows</indexLocationRows>
+    <buildTableRowIndexes>true</buildTableRowIndexes>
+
+    <archiveIndexLocation>C:\ChemNetBase_data\HBCP104\doc_lucene\HBCPdocsIndex_104_archive</archiveIndexLocation>
+    <archiveFolderToIndex>C:\\ChemNetBase_data\HBCP_PDFarchive</archiveFolderToIndex>
+    <buildArchiveIndex>true</buildArchiveIndex>
+
+
+    <!--
+         String indexLocation = "C:\\ChemNetBase_data\\HBCP104\\doc_lucene\\HBCPdocsIndex_104";
+        String indexLocationTbl = "C:\\ChemNetBase_data\\HBCP104\\doc_lucene\\HBCPdocsIndex_104_tbl";
+        String indexLocationRows = "C:\\ChemNetBase_data\\HBCP104\\doc_lucene\\HBCPdocsIndex_104_rows";
+        String folderToIndex = "C:\\ChemNetBaseProject\\ChemNBwebsite5_2\\web\\documents";
+        String archiveIndexLocation = "C:\\ChemNetBase_data\\HBCP104\\doc_lucene\\HBCPdocsIndex_104_archive";
+        String archiveFolderToIndex = "C:\\ChemNetBase_data\\HBCP_PDFarchive";
+        -->
+</docIndex>

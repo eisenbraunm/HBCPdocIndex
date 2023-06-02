@@ -1,0 +1,9 @@
+com\tandf\hbcpdocindex\CNBFieldTypes.class
+com\tandf\hbcpdocindex\HBCPdocIndex.class
+com\tandf\hbcpdocindex\HBCPdocAnalyzer.class
+com\tandf\hbcpdocindex\BuildArchiveIndex.class
+com\tandf\hbcpdocindex\StringUtil.class
+com\tandf\hbcpdocindex\BuildTablesIndex.class
+com\tandf\hbcpdocindex\HTMLstripFilter.class
+com\tandf\hbcpdocindex\BuildRowsIndex.class
+com\tandf\hbcpdocindex\BuildDocIndex.class
