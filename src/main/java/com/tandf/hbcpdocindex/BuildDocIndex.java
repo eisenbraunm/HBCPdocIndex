@@ -109,22 +109,7 @@ public class BuildDocIndex {
                 String fileContents=     new String(Files.readAllBytes( filepath));
                 fileContents=removeTagsPunct(fileContents);
 
-                //we may not need to use this, but it has all the vector postion
-                //here we are creating a user defined field type which has vectors associated withit
-                //from which you could get the freq, but this may not be idea
-
-                //we may have to use span queries to get number of hits,
-                //but we would need to use the same filters as in the analyser in order to repapre the
-                //query correctly
-
-                // FieldType textFieldType = new FieldType();
-                //  textFieldType.setIndexed(true);
-                //    textFieldType.setTokenized(true);
-                //  textFieldType.setStored(true);
-                // textFieldType.setStoreTermVectors(true);
-                // textFieldType.setStoreTermVectorPositions(true);
-                // textFieldType.setStoreTermVectorOffsets(true);
-                // textFieldType.setIndexOptions(FieldInfo.IndexOptions.DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS);
+         
 
 
                 //this is a simple text fields without vectors freuqnecies and offsets,
