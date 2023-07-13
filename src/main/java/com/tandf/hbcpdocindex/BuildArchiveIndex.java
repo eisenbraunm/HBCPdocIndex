@@ -68,11 +68,6 @@ public class BuildArchiveIndex {
 
     public void startBuild() throws IOException {
 
-
-
-
-
-        //try to add file into the index
         indexFileOrDirectory(folderToIndex);
 
         //===================================================
@@ -86,11 +81,7 @@ public class BuildArchiveIndex {
     }
 
     public void indexFileOrDirectory(String fileName) throws IOException {
-        //===================================================
-        //gets the list of files in a folder (if user has submitted
-        //the name of a folder) or gets a single file name (is user
-        //has submitted only the file name)
-        //===================================================
+
         addFiles(new File(fileName));
 
         int originalNumDocs =writer.getDocStats().numDocs;
@@ -151,8 +142,7 @@ public class BuildArchiveIndex {
                     System.out.println("sectionId: " + tblSectionsId);
                     System.out.println("docRef:    " + docRef);
 
-                    //  Field contentField = new Field("contents", getAllText(f), textFieldType);
-                    //  doc.add(contentField);
+
                     doc.add(new TextField("contents", parsedText, Field.Store.NO));
                     doc.add(new StringField("path", f.getPath(), Field.Store.YES));
                     doc.add(new StringField("edition", edition.toString(), Field.Store.YES));

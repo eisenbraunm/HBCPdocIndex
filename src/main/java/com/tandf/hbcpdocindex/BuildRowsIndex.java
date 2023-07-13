@@ -251,12 +251,10 @@ public class BuildRowsIndex {
 
                     tableTitle = "Table";
                 }
-                //contents += " " + StringEscapeUtils.unescapeHtml4(tableTitle);
-                // contents += " " + metadata;
+
                 ordering = tResultSet.getInt("ORDERING");
                 doc.add(new StringField("tableRef", tableRef.toLowerCase(), Field.Store.YES));
                 doc.add(new TextField("contents", contents.toLowerCase(), Field.Store.NO));
-               // doc.add(new StringField("ordering", ordering.toString(), Field.Store.YES));
 
                 CNBFieldTypes.addNumericFieldSort0nly(doc, "ordering",ordering);
                 writer.addDocument(doc);

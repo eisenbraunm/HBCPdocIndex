@@ -152,16 +152,13 @@ public class BuildTablesIndex {
                 doc.add(new StringField("tableRef", tableRef, Field.Store.YES));
                 doc.add(new SortedDocValuesField("tableRef", new BytesRef(tableRef)));
                 doc.add(new StringField("docRef", docRef, Field.Store.YES));
-              //  doc.add(new LongField("tableId", tableId, Field.Store.YES));
+
                 CNBFieldTypes.addNumericFieldSearch( doc, "tableId", tableId);
                 doc.add(new StringField("sort", tableRef, Field.Store.YES));
                 doc.add(new StringField("tableTitle", tableTitle, Field.Store.YES));
                 doc.add(new StringField("all_entries", "y", Field.Store.YES));
                 doc.add(new TextField("docTitle", docTitle, Field.Store.YES));
-               // doc.add(new LongField("docID", docID, Field.Store.YES));
                 CNBFieldTypes.addNumericFieldSearch( doc, "docID", docID);
-               // doc.add(new LongField("sectionID", sectionID, Field.Store.YES));
-
                 CNBFieldTypes.addNumericFieldSearch( doc, "sectionID", sectionID);
                 writer.addDocument(doc);
 

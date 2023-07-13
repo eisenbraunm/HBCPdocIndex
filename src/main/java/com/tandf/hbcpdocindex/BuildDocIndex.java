@@ -98,27 +98,20 @@ public class BuildDocIndex {
                 String wholePath=f.getAbsolutePath();
                 Integer len=wholePath.length()-16;
                 String fileName= wholePath.substring(len);
-//String subfolder= wholePath.substring(0,len-1);
+
                 String subfolder= wholePath.substring(0,len);
 
                 //===================================================
                 // add contents of file
                 //===================================================
-                //     fr = new FileReader(f);
+
                 Path filepath = Paths.get(subfolder, fileName);
                 String fileContents=     new String(Files.readAllBytes( filepath));
                 fileContents=removeTagsPunct(fileContents);
 
-         
 
-
-                //this is a simple text fields without vectors freuqnecies and offsets,
-
-                //  doc.add(new TextField("contents", fr));
                 doc.add(new TextField("contents",fileContents, Field.Store.NO));
 
-                //  Field contentField = new Field("contents", getAllText(f), textFieldType);
-                //  doc.add(contentField);
                 doc.add(new StringField("path", f.getPath(), Field.Store.YES));
                 doc.add(new StringField("filename", f.getName(), Field.Store.YES));
                 doc.add(new SortedDocValuesField("filename", new BytesRef(f.getName())));
