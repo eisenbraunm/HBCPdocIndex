@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <docIndex>
-    <database    pw="overlord" uid="hbcp_user"     url="jdbc:sqlserver://localhost:1433;databaseName=HBCPwebsite_104test;"  />
-    <folderToIndex>C:\ChemNetBaseProject\ChemNBwebsite5_2\web\documents</folderToIndex>
-    <indexLocation>C:\ChemNetBase_data\HBCP104\doc_lucene\HBCPdocsIndex_104</indexLocation>
-    <buildDocIndex>false</buildDocIndex>
+    <database    pw="overlord" uid="hbcp_user"     url="jdbc:sqlserver://localhost:1433;databaseName=HBCPwebsite_105_dev;"  />
+    <folderToIndex>C:\ChemNetBaseCode\Chemnetbase6\src\main\webapp\documents</folderToIndex>
+    <indexLocation>C:\ChemNetBase_data\HBCP105test\doc_lucene\HBCPdocsIndex_105</indexLocation>
+    <buildDocIndex>true</buildDocIndex>
 
-    <indexLocationTbl>C:\ChemNetBase_data\HBCP104\doc_lucene\HBCPdocsIndex_104_tbl</indexLocationTbl>
-    <buildTableIndexes>false</buildTableIndexes>
+    <indexLocationTbl>C:\ChemNetBase_data\HBCP105test\doc_lucene\HBCPdocsIndex_105_tbl</indexLocationTbl>
+    <buildTableIndexes>true</buildTableIndexes>
 
-    <indexLocationRows>C:\ChemNetBase_data\HBCP104\doc_lucene\HBCPdocsIndex_104_rows</indexLocationRows>
+    <indexLocationRows>C:\ChemNetBase_data\HBCP105test\doc_lucene\HBCPdocsIndex_105_rows</indexLocationRows>
     <buildTableRowIndexes>true</buildTableRowIndexes>
 
-    <archiveIndexLocation>C:\ChemNetBase_data\HBCP104\doc_lucene\HBCPdocsIndex_104_archive</archiveIndexLocation>
+    <archiveIndexLocation>C:\ChemNetBase_data\HBCP105test\doc_lucene\HBCPdocsIndex_105_archive</archiveIndexLocation>
     <archiveFolderToIndex>C:\\ChemNetBase_data\HBCP_PDFarchive</archiveFolderToIndex>
     <buildArchiveIndex>true</buildArchiveIndex>
 

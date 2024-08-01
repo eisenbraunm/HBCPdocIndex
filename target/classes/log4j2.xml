@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="DEBUG">
+<Configuration status="INFO">
     <Properties>
-        <Property name="basePath">E:\HBCP_POCproduction\log</Property>
+        <Property name="basePath">C:\ChemNetBaseCode\CACHE\logs</Property>
     </Properties>
 
     <Appenders>
@@ -19,7 +19,7 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="com.tandf" level="debug" additivity="true">
+        <Logger name="com.tandf" level="info" additivity="true">
             <appender-ref ref="fileLogger" level="debug" />
         </Logger>
         <Root level="info" >
